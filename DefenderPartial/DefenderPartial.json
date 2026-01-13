@@ -1,0 +1,46 @@
+{
+    "Rules":[ 
+        { 
+         "SettingName":"CloudProtection",
+         "Operator":"IsEquals",
+         "DataType":"Int64",
+         "Operand":"2",
+         "MoreInfoUrl":"https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender?WT.mc_id=Portal-fx#allowcloudprotection",
+         "RemediationStrings":[ 
+            { 
+               "Language":"en_US",
+               "Title":"Cloud Protection must be enabled. Value discovered was {ActualValue}.",
+               "Description": "Make sure to enable Cloud Protection"
+            }
+         ]
+      },        
+         { 
+            "SettingName":"AntivirusEnabled",
+            "Operator":"IsEquals",
+            "DataType":"Boolean",
+            "Operand":"true",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Microsoft Windows Defender Antivirus must be enabled. Value discovered was {ActualValue}.",
+                  "Description": "Make sure to enable Microsoft Defender Antivirus"
+               }
+            ]
+         },
+         { 
+            "SettingName":"NetworkProtectionEnabled",
+            "Operator":"IsEquals",
+            "DataType":"Int64",
+            "Operand":"1",
+            "MoreInfoUrl":"https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/network-protection?view=o365-worldwide",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Network protection must be enabled. Value discovered was {ActualValue}.",
+                  "Description": "Make sure to enable network protection"
+               }
+            ]
+         }
+     ]
+    }

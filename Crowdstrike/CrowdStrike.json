@@ -1,0 +1,18 @@
+{
+  "Rules": [
+    {
+      "SettingName": "CrowdStrike Windows Sensor",
+      "Operator": "GreaterEquals",
+      "DataType": "Version",
+      "Operand": "7.28.20008.0", 
+      "MoreInfoUrl": "https://www.crowdstrike.com",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "CrowdStrike Windows Sensor must be installed. Version discovered was {ActualValue}.",
+          "Description": "Please ensure CrowdStrike Windows Sensor is installed with the required version."
+        }
+      ]
+    }
+  ]
+}
