@@ -1,0 +1,32 @@
+{
+  "Rules": [
+    {
+      "SettingName": "PrintSpoolerStopped",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Print Spooler service is running",
+          "Description": "The Print Spooler service is running on a device that must not print. This service is disabled for security reasons. Please contact the helpdesk."
+        }
+      ]
+    },
+    {
+      "SettingName": "PrintSpoolerDisabled",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://learn.microsoft.com/en-us/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Print Spooler service is not disabled",
+          "Description": "The Print Spooler service is allowed to start on this device. It must be set to Disabled for security reasons. Please contact the helpdesk."
+        }
+      ]
+    }
+  ]
+}

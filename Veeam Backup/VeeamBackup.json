@@ -1,0 +1,32 @@
+{
+  "Rules": [
+    {
+      "SettingName": "VeeamFileExists",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://www.veeam.com/products/microsoft/windows-endpoint-server-backup.html",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Backup software is not installed",
+          "Description": "Veeam Agent backup software was not found on your device, so your data is not being backed up. Please contact the helpdesk."
+        }
+      ]
+    },
+    {
+      "SettingName": "VeeamServiceRunning",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://www.veeam.com/products/microsoft/windows-endpoint-server-backup.html",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Backup service is not running",
+          "Description": "Veeam Agent is installed but its backup service is not running, so your data may not be protected. Restart your device; if this message remains, contact the helpdesk."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "Rules": [
+    {
+      "SettingName": "TeamViewerFileExists",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://www.teamviewer.com/en/download/quick-support/",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "TeamViewer QuickSupport is missing",
+          "Description": "The TeamViewer QuickSupport tool (TeamViewerQS_x64.exe) was not found in C:\\Temp. IT needs this tool to support you remotely. Please contact the helpdesk."
+        }
+      ]
+    }
+  ]
+}

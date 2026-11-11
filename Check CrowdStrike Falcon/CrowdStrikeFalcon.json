@@ -1,0 +1,46 @@
+{
+  "Rules": [
+    {
+      "SettingName": "FalconFileExists",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://www.crowdstrike.com/platform/endpoint-security/",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Endpoint protection (CrowdStrike) is not installed",
+          "Description": "The required CrowdStrike Falcon sensor was not found on your device. Please contact the helpdesk."
+        }
+      ]
+    },
+    {
+      "SettingName": "FalconServiceRunning",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://www.crowdstrike.com/platform/endpoint-security/",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Endpoint protection (CrowdStrike) is not running",
+          "Description": "The CrowdStrike Falcon sensor is installed but its service is not running. Restart your device; if this message remains, contact the helpdesk."
+        }
+      ]
+    },
+    {
+      "SettingName": "FalconSensorVersion",
+      "Operator": "GreaterEquals",
+      "DataType": "Version",
+      "Operand": "7.10.0.0",
+      "MoreInfoUrl": "https://www.crowdstrike.com/platform/endpoint-security/",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Endpoint protection (CrowdStrike) is out of date",
+          "Description": "Your CrowdStrike Falcon sensor is older than the minimum supported version. It normally updates on its own; please contact the helpdesk if this message remains."
+        }
+      ]
+    }
+  ]
+}

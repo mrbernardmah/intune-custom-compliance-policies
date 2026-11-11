@@ -1,0 +1,32 @@
+{
+  "Rules": [
+    {
+      "SettingName": "WindowsDefenderRunning",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Microsoft Defender Antivirus is not running",
+          "Description": "The Microsoft Defender Antivirus service (WinDefend) is not running, so your device is not protected. Restart your device; if this message remains, contact the helpdesk."
+        }
+      ]
+    },
+    {
+      "SettingName": "WindowsDefenderAutoStart",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Microsoft Defender Antivirus is not set to start automatically",
+          "Description": "The Microsoft Defender Antivirus service has been changed so it will not start with Windows. Please contact the helpdesk."
+        }
+      ]
+    }
+  ]
+}
