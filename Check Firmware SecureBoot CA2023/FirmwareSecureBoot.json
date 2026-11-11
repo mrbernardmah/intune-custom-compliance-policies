@@ -1,0 +1,61 @@
+{
+  "Rules": [
+    {
+      "SettingName": "FirmwareMeetsMinimum",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://support.microsoft.com/help/5062710",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "A BIOS/UEFI firmware update is required",
+          "Description": "Your device's firmware is older than the minimum supported version. Install firmware updates through Windows Update (Settings > Windows Update > Advanced options > Optional updates) or your manufacturer's update app, then restart. Contact the helpdesk if you need help."
+        },
+        {
+          "Language": "de_DE",
+          "Title": "Ein BIOS/UEFI-Firmwareupdate ist erforderlich",
+          "Description": "Die Firmware Ihres Geräts ist älter als die mindestens unterstützte Version. Installieren Sie Firmwareupdates über Windows Update oder die Update-App Ihres Herstellers und starten Sie das Gerät neu. Wenden Sie sich bei Fragen an den Helpdesk."
+        }
+      ]
+    },
+    {
+      "SettingName": "SecureBootEnabled",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://support.microsoft.com/windows/a8ff1202-c0d9-42f5-940f-843abef64fad",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Secure Boot is turned off",
+          "Description": "Secure Boot must be enabled in your device's firmware settings. Please contact the helpdesk; do not change firmware settings yourself."
+        },
+        {
+          "Language": "de_DE",
+          "Title": "Secure Boot ist deaktiviert",
+          "Description": "Secure Boot muss in den Firmware-Einstellungen Ihres Geräts aktiviert sein. Bitte wenden Sie sich an den Helpdesk und ändern Sie die Firmware-Einstellungen nicht selbst."
+        }
+      ]
+    },
+    {
+      "SettingName": "SecureBootDbHasCA2023",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://support.microsoft.com/help/5062710",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Secure Boot certificate update is missing",
+          "Description": "Your device does not yet have the 2023 Secure Boot certificate. Install all Windows and firmware updates and restart your device twice. If this message remains, contact the helpdesk."
+        },
+        {
+          "Language": "de_DE",
+          "Title": "Secure-Boot-Zertifikatsupdate fehlt",
+          "Description": "Ihr Gerät hat das Secure-Boot-Zertifikat von 2023 noch nicht. Installieren Sie alle Windows- und Firmwareupdates und starten Sie das Gerät zweimal neu. Wenden Sie sich an den Helpdesk, wenn diese Meldung bestehen bleibt."
+        }
+      ]
+    }
+  ]
+}

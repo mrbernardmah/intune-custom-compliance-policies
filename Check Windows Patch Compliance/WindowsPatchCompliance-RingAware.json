@@ -1,0 +1,32 @@
+{
+  "Rules": [
+    {
+      "SettingName": "Status",
+      "Operator": "IsEquals",
+      "DataType": "String",
+      "Operand": "Evaluated",
+      "MoreInfoUrl": "https://support.microsoft.com/en-us/windows/install-windows-updates-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Windows update status could not be checked ({ActualValue})",
+          "Description": "Your device's update level could not be confirmed. Make sure you are connected to the internet, then sync your device in Company Portal. If this message remains, contact the helpdesk."
+        }
+      ]
+    },
+    {
+      "SettingName": "isLatestForThisDevice",
+      "Operator": "IsEquals",
+      "DataType": "Boolean",
+      "Operand": true,
+      "MoreInfoUrl": "https://support.microsoft.com/en-us/windows/install-windows-updates-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a",
+      "RemediationStrings": [
+        {
+          "Language": "en_US",
+          "Title": "Windows security updates are overdue",
+          "Description": "Your device has passed the deadline for installing Windows security updates. Open Settings > Windows Update, select Check for updates, install everything offered and restart your device."
+        }
+      ]
+    }
+  ]
+}
